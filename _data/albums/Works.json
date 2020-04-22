@@ -1,46 +1,14 @@
 {
   "order": [
-    "pro_pic.jpg",
-    "greece_final_3.jpg",
-    "Annotation 2020-02-23 235216.png",
-    "Annotation 2020-02-23 235216.min.png",
-    "Annotation 2020-02-23 235216.min.min.png"
+    "failure.jpg"
   ],
   "dict": {
-    "pro_pic.jpg": {
+    "failure.jpg": {
       "type": "photo",
-      "width": 1440,
-      "height": 1431,
-      "path": "./photos\\Works\\pro_pic.jpg",
-      "min_path": "./photos\\Works\\pro_pic.min.jpg"
-    },
-    "greece_final_3.jpg": {
-      "type": "photo",
-      "width": 3049,
-      "height": 4390,
-      "path": "./photos\\Works\\greece_final_3.jpg",
-      "min_path": "./photos\\Works\\greece_final_3.min.jpg"
-    },
-    "Annotation 2020-02-23 235216.png": {
-      "type": "photo",
-      "width": 897,
-      "height": 1231,
-      "path": "./photos\\Works\\Annotation 2020-02-23 235216.png",
-      "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.png"
-    },
-    "Annotation 2020-02-23 235216.min.png": {
-      "type": "photo",
-      "width": 600,
-      "height": 823,
-      "path": "./photos\\Works\\Annotation 2020-02-23 235216.min.png",
-      "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.png"
-    },
-    "Annotation 2020-02-23 235216.min.min.png": {
-      "type": "photo",
-      "width": 600,
-      "height": 823,
-      "path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.png",
-      "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.min.png"
+      "width": 3377,
+      "height": 2255,
+      "path": "./photos\\Works\\failure.jpg",
+      "min_path": "./photos\\Works\\failure.min.jpg"
     }
   }
 }
