@@ -26,6 +26,20 @@
         "height": 1231,
         "path": "./photos\\Works\\Annotation 2020-02-23 235216.png",
         "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.png"
+      },
+      {
+        "type": "photo",
+        "width": 600,
+        "height": 823,
+        "path": "./photos\\Works\\Annotation 2020-02-23 235216.min.png",
+        "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.png"
+      },
+      {
+        "type": "photo",
+        "width": 600,
+        "height": 823,
+        "path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.png",
+        "min_path": "./photos\\Works\\Annotation 2020-02-23 235216.min.min.min.png"
       }
     ]
   }
