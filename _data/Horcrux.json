@@ -5,78 +5,18 @@
   "parents": [],
   "items": {
     "order": [
-      "2019",
-      "2018"
+      "Works"
     ],
     "dict": {
-      "2018": {
-        "name": "2018",
+      "Works": {
+        "name": "Works",
         "type": "album",
         "root": 1,
         "parents": [
-          "2018"
+          "Works"
         ],
-        "items": {
-          "order": [
-            "Hokkaido December"
-          ],
-          "dict": {
-            "Hokkaido December": {
-              "name": "Hokkaido December",
-              "type": "album",
-              "root": 2,
-              "parents": [
-                "2018",
-                "Hokkaido December"
-              ],
-              "path": "./_data/albums/2018-Hokkaido December.json",
-              "no_sub_album": true
-            }
-          }
-        }
-      },
-      "2019": {
-        "name": "2019",
-        "type": "album",
-        "root": 1,
-        "parents": [
-          "2019"
-        ],
-        "items": {
-          "order": [
-            "August"
-          ],
-          "dict": {
-            "August": {
-              "name": "August",
-              "type": "album",
-              "root": 2,
-              "parents": [
-                "2019",
-                "August"
-              ],
-              "items": {
-                "order": [
-                  "Street"
-                ],
-                "dict": {
-                  "Street": {
-                    "name": "Street",
-                    "type": "album",
-                    "root": 3,
-                    "parents": [
-                      "2019",
-                      "August",
-                      "Street"
-                    ],
-                    "path": "./_data/albums/2019-August-Street.json",
-                    "no_sub_album": true
-                  }
-                }
-              }
-            }
-          }
-        }
+        "path": "./_data\\albums\\Works.json",
+        "no_sub_album": true
       }
     }
   }
