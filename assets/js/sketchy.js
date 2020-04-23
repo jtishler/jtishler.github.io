@@ -193,6 +193,7 @@ let mode = 0; // 0 = pen, 1 = rect, 2 = ellipse
 let colorPicker;
 
 let img;
+let cnv;
 
 function preload() {
   img = loadImage("assets/greece.jpg");
@@ -202,8 +203,8 @@ function setup() {
   angleMode(DEGREES);
   //rectMode(CENTER);
 
-  let canvas = createCanvas((3049/4390) * windowHeight, windowHeight);
-  canvas.parent('sketchy-holder');
+  cnv = createCanvas((3049/4390) * windowHeight, windowHeight);
+  cnv.parent('sketchy-holder');
   
   colorPicker = createColorPicker('#ed225d');
   colorPicker.parent('color-picker-holder');
@@ -248,6 +249,8 @@ function keyPressed() {
     }  
   } else if (keyCode === ESCAPE) {
     shapes.splice(0);
+  } else if (keyCode === ENTER) {
+    saveCanvas(cnv, 'my_canvas', 'jpg');
   }
 }
 
