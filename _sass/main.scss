@@ -28,6 +28,14 @@ h1, h2, footer {
 figure {
   margin: 0;
 }
+figure img {
+  padding-bottom: 1em;
+}
+figure figcaption {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.8em;
+}
 footer {
   bottom: 0;
   color: $text;

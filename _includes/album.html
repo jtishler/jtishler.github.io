@@ -11,6 +11,7 @@
             data-size="640x1138">
             <img class="photo-img" itemprop="thumbnail" src="../gifs/camorra.gif"/>
           </a>
+          <figcaption>Gomorra <br> Oil paint, video, projection <br> 3.3' x 5.3' </figcaption>
         </figure>
         <figure class="photo-figure" itemscope>
           <a class="photo-a" itemprop="../gifs/pumpkin.gif" 
@@ -19,6 +20,7 @@
             data-size="637x567">
             <img class="photo-img" itemprop="thumbnail" src="../gifs/pumpkin.gif"/>
           </a>
+          <figcaption>Flicker <br> Oil paint, animation, projection <br> 20" x 18" </figcaption>
         </figure>
         <figure class="photo-figure" itemscope>
           <a class="photo-a" itemprop="../gifs/smarginatura.gif" 
@@ -27,6 +29,7 @@
             data-size="503x360">
             <img class="photo-img" itemprop="thumbnail" src="../gifs/smarginatura.gif"/>
           </a>
+          <figcaption>Smarginatura <br> Oil paint, video, projection <br> 6' x 4.2' </figcaption>
         </figure>
         {%- for photo in album.list -%}
           <figure class="photo-figure" itemscope>
@@ -36,6 +39,7 @@
               data-size="{{ photo.width }}x{{ photo.height }}">
               <img class="photo-img" itemprop="thumbnail" src="{{ photo.min_path }}"/>
             </a>
+            <figcaption>Failrue <br> Acrylic paint, photo, projection <br> 3.3' x 5.3' </figcaption>
           </figure>
         {%- endfor -%}
       </div>
