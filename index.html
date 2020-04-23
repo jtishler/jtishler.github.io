@@ -20,6 +20,7 @@
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <SCRIPT TYPE="text/javascript"> 
       //Disable right click script 
       //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
@@ -35,11 +36,36 @@
     </SCRIPT> 
   </head>
   <body>
+    <script src="../assets/js/sketchy.js"></script>
     {%- include header.html -%}
     <div class="gallary">
       <h1>{{ site.name }}</h1>
       {%- assign albums = site.data.config -%}
       {%- include album.html -%}
+    </div>
+    <div class="sketchy" id="sketchy-holder">
+      <div class="sketchy" id="canvas-holder">
+        
+      </div>
+      <div class="sketchy" id="color-picker-holder">
+
+      </div>
+      <div class="sketchy" id="sketchy-info">
+        <p>
+          <strong>Directions:</strong><br>
+          Draw shapes and lines to contribute to this piece.<br> 
+          <br><strong>Controls:</strong><br>
+          Press 'r' for rectangle creation.<br>
+          Press 'e' for ellipse creation.<br>
+          Press 'l' for line drawing.<br>
+          Press 's' for shape selection.<br>
+          Press 'c' for to change the color of the selected shapes to the current color picker color.<br>
+          Hold shift and drag to rotate selected shape.<br>
+          Hold control and drag to rotate selected shape.<br>
+          Press delete to remove selected shape.<br>
+          Press escape to clear canvas.
+        </p>
+      </div>
     </div>
     {%- include footer.html -%}
     {%- include swipe.html -%}

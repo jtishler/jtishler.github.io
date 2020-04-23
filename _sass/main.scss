@@ -8,6 +8,18 @@ html {
 body {
   margin: 0;
 }
+canvas {
+  display: block;
+}
+#sketchy-holder {
+  padding: 2em;
+}
+#canvas-holder {
+  float:left;
+}
+#sketchy-info{
+  float:right;
+}
 h1 {
   font-size: 1.8em;
   color: $title;
