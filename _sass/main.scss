@@ -20,6 +20,11 @@ canvas {
 #sketchy-info{
   float:right;
 }
+#navigation-header{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
 h1 {
   font-size: 1.8em;
   color: $title;
