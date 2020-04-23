@@ -2,10 +2,6 @@
   {%- if album.type == 'photos' -%}
       {%- assign strong_name = album.name | prepend: '<strong>' | append: '</strong>' }} -%}
       {{ search.terms }}
-      <div id="navigation-header">
-        <h2 class="head head-{{ album.root }}">{{ album.parents | reverse | join: ' · ' | replace: album.name, strong_name | upcase}}</h2>
-        <h2 class="head head"><a href="about.html">ABOUT</a></h2>
-      </div>
       <div class="photos">
         <figure class="photo-figure" itemscope>
           <a class="photo-a" itemprop="../gifs/pumpkin.gif" 
