@@ -4,6 +4,30 @@
       {{ search.terms }}
       <h2 class="head head-{{ album.root }}">{{ album.parents | reverse | join: ' · ' | replace: album.name, strong_name | upcase}}</h2>
       <div class="photos">
+        <figure class="photo-figure" itemscope>
+          <a class="photo-a" itemprop="../gifs/camorra.gif" 
+            href="../gifs/camorra.gif"
+            msrc="../gifs/camorra.gif"
+            data-size="640x1138">
+            <img class="photo-img" itemprop="thumbnail" src="../gifs/camorra.gif"/>
+          </a>
+        </figure>
+        <figure class="photo-figure" itemscope>
+          <a class="photo-a" itemprop="../gifs/pumpkin.gif" 
+            href="../gifs/pumpkin.gif"
+            msrc="../gifs/pumpkin.gif"
+            data-size="637x567">
+            <img class="photo-img" itemprop="thumbnail" src="../gifs/pumpkin.gif"/>
+          </a>
+        </figure>
+        <figure class="photo-figure" itemscope>
+          <a class="photo-a" itemprop="../gifs/smarginatura.gif" 
+            href="../gifs/smarginatura.gif"
+            msrc="../gifs/smarginatura.gif"
+            data-size="503x360">
+            <img class="photo-img" itemprop="thumbnail" src="../gifs/smarginatura.gif"/>
+          </a>
+        </figure>
         {%- for photo in album.list -%}
           <figure class="photo-figure" itemscope>
             <a class="photo-a" itemprop="{{ photo.path }}" 
@@ -14,14 +38,6 @@
             </a>
           </figure>
         {%- endfor -%}
-        <figure class="photo-figure" itemscope>
-          <a class="photo-a" itemprop="../photos/Works/camorra.gif" 
-            href="../photos/Works/camorra.gif"
-            msrc="../photos/Works/camorra.gif"
-            data-size="540x960">
-            <img class="photo-img" itemprop="thumbnail" src="../photos/Works/camorra.gif"/>
-          </a>
-        </figure>
       </div>
   {%- endif -%}
 {%- endfor -%}
