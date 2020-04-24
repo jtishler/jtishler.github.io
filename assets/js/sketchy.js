@@ -262,9 +262,10 @@ function mousePressed() {
     shapes.push(currShape);
   } else if (mode == 3) {
     currShape = null;
-    for (let i = 0; i < shapes.length; i++) {
+    for (let i = shapes.length - 1; i >= 0; i--) {
       if (shapes[i].contains(mouseX, mouseY)) {
         currShape = shapes[i];
+        break;
       }
     }
   }
