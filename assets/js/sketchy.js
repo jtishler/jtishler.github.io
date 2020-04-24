@@ -244,6 +244,7 @@ function keyPressed() {
     }  
   } else if (keyCode === ESCAPE) {
     shapes.splice(0);
+    lines.splice(0);
   } else if (keyCode === ENTER) {
     saveCanvas(cnv, 'my_canvas', 'jpg');
   }
