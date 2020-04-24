@@ -1,7 +1,7 @@
 @import "base";
 
 .content-desktop {
-  display: block;
+  display: flex;
 }
 .content-mobile {
   display: none;
@@ -43,12 +43,7 @@ canvas {
 }
 #sketchy-holder {
   padding: 2em;
-}
-#canvas-holder {
-  float:left;
-}
-#sketchy-info{
-  float:right;
+  display: flex;
 }
 #navigation-header{
   display: flex;
