@@ -106,10 +106,6 @@ class Rectangle extends Shape {
   }
 
   contains(x, y) {
-    // print(y);
-    // print(this.myY);
-    // print(this.myY  + this.myHeight);
-    // print("h: " + this.myHeight);
     let myX2 = this.myX + this.myWidth;
     let myY2 = this.myY + this.myHeight;
     if (x >= min(this.myX, myX2) && x <= max(this.myX, myX2)) {
@@ -123,12 +119,10 @@ class Rectangle extends Shape {
   }
 
   getCenterX() {
-    //return this.myX + width / 2;
     return this.myX;
   }
 
   getCenterY() {
-    //return this.myY + this.myHeight / 2;
     return this.myY;
   }
 }
@@ -185,6 +179,7 @@ class Line {
 }
 
 let shapes = [];
+let lines = [];
 let currShape;
 
 let x = 0;
@@ -201,16 +196,12 @@ function preload() {
 
 function setup() {
   angleMode(DEGREES);
-  //rectMode(CENTER);
 
   cnv = createCanvas((3049/4390) * windowHeight, windowHeight);
   cnv.parent('sketchy-holder');
   
   colorPicker = createColorPicker('#ed225d');
   colorPicker.parent('color-picker-holder');
-  //colorPicker.position(0, 0);
-  
-  // shapes.push(new Rectangle(0, 0, 100, 100, colorPicker.color()));
 }
 
 function draw() {
@@ -218,11 +209,15 @@ function draw() {
 
 
   if (mouseIsPressed && mode == 0) {
-    shapes.push(new Line(pmouseX, pmouseY, mouseX, mouseY, colorPicker.color()));
+    lines.push(new Line(pmouseX, pmouseY, mouseX, mouseY, colorPicker.color()));
   }
 
   for (let i = 0; i < shapes.length; i++) {
     shapes[i].draw();
+  }
+
+  for (let j = 0; j < lines.length; j++) {
+    lines[j].draw();
   }
 }
 
