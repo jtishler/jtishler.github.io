@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
             navigator.userAgent
         )
     ) {
-        document.getElementById("about-text").style.width = "100vw";
-        document.getElementById("sketchy-holder").style.display = 'none';
+        //document.getElementById("about-text").style.width = "100vw";
+        //document.getElementById("about-text").style.margin = "1em";
+        //document.getElementById("sketchy-holder").style.display = 'none';
     } else {
-        document.getElementById("about-text").style.width = "50vw";
-        document.getElementById("sketchy-holder").style.display = 'block';
+        //document.getElementById("about-text").style.width = "50vw";
+        //document.getElementById("sketchy-holder").style.display = 'block';
     }
 });
