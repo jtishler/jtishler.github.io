@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         )
     ) {
         document.getElementsByClassName("text").width = "100vw";
+        document.getElementById("sketchy-holder").style.display = 'none';
     } else {
         document.getElementsByClassName("text").width = "50vw";
+        document.getElementById("sketchy-holder").style.display = 'block';
     }
 });
