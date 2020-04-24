@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
             navigator.userAgent
         )
     ) {
-        document.getElementsByClassName("text").style.width = "100vw";
+        document.getElementsByClassName("text")[0].style.width = "100vw";
         document.getElementById("sketchy-holder").style.display = 'none';
     } else {
-        document.getElementsByClassName("text").style.width = "50vw";
+        document.getElementsByClassName("text")[0].style.width = "50vw";
         document.getElementById("sketchy-holder").style.display = 'block';
     }
 });
